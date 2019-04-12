@@ -47,7 +47,7 @@ and can be changed before creating a Diagram.
 	function wrapString(value) {
 		return value instanceof FakeSVG ? value : new Terminal(""+value);
 	}
-
+ 
 	function sum(iter, func) {
 		if(!func) func = function(x) { return x; };
 		return iter.map(func).reduce(function(a,b){return a+b}, 0);
